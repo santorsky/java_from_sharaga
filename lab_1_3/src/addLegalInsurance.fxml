@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddLegalInsuranceController">
+    <children>
+        <AnchorPane layoutY="100.0" prefHeight="500.0" prefWidth="902.0" style="-fx-background-color: fafafa;">
+            <children>
+                <Button fx:id="comeBack" layoutX="367.0" layoutY="418.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="168.0" style="-fx-background-color: F39C63; -fx-border-color: F4ad74;" text="Вернуться" textFill="#fafafa">
+                    <font>
+                        <Font name="Lucida Fax Regular" size="24.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="insuranceName" layoutX="328.0" layoutY="57.0" prefHeight="34.0" prefWidth="246.0" promptText="Название страховой компании" AnchorPane.topAnchor="57.0">
+                    <font>
+                        <Font name="Lucida Fax Regular" size="12.0" />
+                    </font>
+                </TextField>
+                <ComboBox fx:id="legalEntityType" layoutX="328.0" layoutY="107.0" prefHeight="34.0" prefWidth="246.0" promptText="Не выбран тип юрлица" AnchorPane.topAnchor="107.0" />
+                <TextField fx:id="termInMonths" layoutX="328.0" layoutY="157.0" prefHeight="34.0" prefWidth="246.0" promptText="Длительность договора" AnchorPane.topAnchor="157.0">
+                    <font>
+                        <Font name="Lucida Fax Regular" size="12.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="maxSum" layoutX="328.0" layoutY="207.0" prefHeight="34.0" prefWidth="246.0" promptText="Сумма договора" AnchorPane.topAnchor="207.0">
+                    <font>
+                        <Font name="Lucida Fax Regular" size="12.0" />
+                    </font>
+                </TextField>
+                <Button fx:id="add" layoutX="367.0" layoutY="264.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="168.0" style="-fx-background-color: F39C63; -fx-border-color: F4ad74;" text="Добавить" textFill="#fafafa" AnchorPane.topAnchor="257.0">
+                    <font>
+                        <Font name="Lucida Fax Regular" size="24.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <Label layoutX="306.0" layoutY="14.0" text="AllSave" textFill="#fafafa">
+            <font>
+                <Font name="Lucida Fax Regular" size="64.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
